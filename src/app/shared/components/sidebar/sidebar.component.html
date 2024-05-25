@@ -1,0 +1,66 @@
+<div id="container">
+  <dx-menu
+      [adaptivityEnabled]="toggle"
+      (onItemClick)="onItemClick($event)">
+      <dxi-item
+          icon="home"
+          text="Home"
+          routerLink="home"
+          data-item-id ="/home"
+
+
+      >
+      </dxi-item>
+      <dxi-item
+          icon="floppy"
+          text="About Me"
+          data-item-id="/about"
+      >
+      </dxi-item>
+      <dxi-item
+          icon="check"
+          text="Experience"
+      >
+    </dxi-item>
+          <dxi-item
+              text="Course of Visual Studio"
+          >
+          </dxi-item>
+          <dxi-item
+              text="Course of JavaScript"
+          >
+              <dxi-item
+                  text="Basics"
+              >
+              </dxi-item>
+              <dxi-item
+                  [beginGroup]="true"
+                  text="Functions ands Arrays"
+              >
+              </dxi-item>
+              <dxi-item
+                  text="Objects"
+              >
+              </dxi-item>
+          </dxi-item>
+          <dxi-item
+              [disabled]="true"
+              text="Async-Await"
+          >
+          <dxi-item
+              [disabled]="false"
+              text="Promises"
+          >
+          </dxi-item>
+        </dxi-item>
+        <dxi-item
+        icon="cart"
+        >
+      </dxi-item>
+    </dx-menu>
+    <dx-check-box
+      text="Enable adaptivity"
+      (onValueChanged)="onValueChanged($event)"
+    >
+    </dx-check-box>
+  </div>
