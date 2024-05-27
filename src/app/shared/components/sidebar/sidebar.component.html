@@ -1,26 +1,28 @@
-<div id="container">
+<div id="container main-nav">
   <dx-menu
       [adaptivityEnabled]="toggle"
       (onItemClick)="onItemClick($event)">
       <dxi-item
           icon="home"
           text="Home"
+          path="/home"
           routerLink="home"
-          data-item-id ="/home"
-
-
+          routerLinkActive="active -route"
       >
       </dxi-item>
+
       <dxi-item
           icon="floppy"
           text="About Me"
+          path="/about"
           routerLink="about"
-          data-item-id="/about"
       >
       </dxi-item>
+
       <dxi-item
           icon="check"
           text="Experience"
+          [routerLink]="'about'"
       >
     </dxi-item>
           <dxi-item

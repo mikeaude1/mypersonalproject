@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,22 +7,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
+  constructor(private router: Router) { }
+
   onItemClick(e: any) {
-    if (e.itemData.text) {
-        console.log(e.itemData.text + ' has been clicked!');
+    const item = e.itemData;
+    console.log('Item clicked:', item);
+    if (item.path) {
+      console.log('Navigating to:', item.path);
+      this.router.navigate([item.path]).then(success => {
+        if (success) {
+          console.log('Navigation successful!');
+        } else {
+          console.log('Navigation failed!');
+        }
+      }).catch(err => {
+        console.error('Navigation error:', err);
+      });
+    } else {
+      console.warn('Path not defined for this item:', item);
     }
-    else if (e.itemData.icon) {
-        console.log(e.itemData.icon.charAt(0).toUpperCase() + e.itemData.icon.slice(1) + ' has been clicked!');
-    }
-}
-toggle: boolean = false;
-
-onValueChanged(e: any) {
-    this.toggle = e.value;
-}
-  constructor() { }
-
-  ngOnInit() {
   }
 
+  toggle: boolean = false;
+
+  onValueChanged(e: any) {
+    this.toggle = e.value;
+  }
+  navigation: any[] = [
+    { id: 1, text: "Home", icon: "home", path: "home" },
+    { id: 2, text: "About", icon: "about", path: "about" },
+    { id: 3, text: "Trash", icon: "trash", path: "trash" },
+    { id: 4, text: "Spam", icon: "mention", path: "spam" }
+];
+isDrawerOpen: Boolean = false;
+  ngOnInit() {}
 }

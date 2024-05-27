@@ -7,12 +7,14 @@ import { CommonModule } from '@angular/common';
 import { DxMenuModule, DxCheckBoxModule } from "devextreme-angular";
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MenuLiComponent } from './components/MenuLi/MenuLi.component';
 
 @NgModule({
   declarations:[
     AboutPageComponent,
     HomePageComponent,
     SidebarComponent,
+    MenuLiComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { RouterModule } from '@angular/router';
   exports:[
     AboutPageComponent,
     HomePageComponent,
-    SidebarComponent
+    SidebarComponent,
+    MenuLiComponent
   ],
   bootstrap: [SidebarComponent],
 })
