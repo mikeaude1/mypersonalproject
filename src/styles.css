@@ -1,4 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
 body{
-  background-color: cadetblue;
+  background-size: 100vw 100vh;
+  background-repeat: repeat;
+  background-image: url(./assets/verde.jpg);
+  color: white;
 }

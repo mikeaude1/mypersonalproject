@@ -1,0 +1,48 @@
+img{
+  border-radius: 100%;
+  width: 50%;
+  height: 80%;
+}
+#hey{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-family: Onest Variable, system-ui, sans-serif;
+}
+
+#disponible{
+  margin-top: 20px;
+  border-radius: 2rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-left: 0%;
+}
+.desa{
+  color: rgb(235, 235, 81);
+}
+p{
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn{
+  background-color: #744ec0;
+  color: rgb(231, 207, 255);
+  margin-top: 20px;
+  border-radius: 2rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-left: 0%;
+}
+.btn:hover{
+  background-color: #5d21d4;
+  color: rgb(231, 207, 246);
+  border: #5d21d4;
+}
+.btn2{
+  margin-top: 20px;
+  border-radius: 2rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-left: 0%;
+}

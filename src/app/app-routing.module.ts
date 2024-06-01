@@ -13,6 +13,14 @@ const routes: Routes = [
   component: AboutPageComponent
   },
   {
+  path:'about',
+  component: AboutPageComponent
+  },
+  {
+  path:'blog',
+  loadChildren:()=> import('./blog/blog.module').then(m => m.BlogModuleModule)
+  },
+  {
     path:'**',
     redirectTo:'home',
 
