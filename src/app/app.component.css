@@ -2,6 +2,62 @@ div{ color: rgb(250, 250, 250);
 font-size: 20px;
 font-family: sans-serif;
 }
-app-sidebar{
-  position: center !important;
+
+.btn3.button {
+  background-color: transparent !important;
+  display: flex;            /* Para centrar la imagen */
+  align-items: center;      /* Para centrar la imagen verticalmente */
+  justify-content: center;  /* Para centrar la imagen horizontalmente */
+  width: 35px;             /* Ancho del botón */
+  height: 35px;            /* Alto del botón */
+  padding: 0;               /* Eliminar padding del botón */
+  border: none;             /* Eliminar borde del botón */
+  background-color: #fff;   /* Fondo del botón */
 }
+
+/* Estilo para la imagen */
+.btn3.button img {
+  width: 100%;              /* Abarcar el ancho completo del botón */
+  height: 100%;             /* Abarcar el alto completo del botón */
+  object-fit: contain;      /* Ajustar la imagen sin distorsionarla */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.kopo {
+  flex: 0 0 auto;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+}
+
+.col-8 {
+  flex: 1;
+  margin-top: 0 !important;
+}
+
+.footer {
+  padding: 20px 0;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+

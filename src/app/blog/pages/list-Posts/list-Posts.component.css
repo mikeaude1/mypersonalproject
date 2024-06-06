@@ -1,0 +1,22 @@
+.card {
+  border-radius: 10px;
+  background-color: hsla(196, 74%, 74%, 0.722);
+  box-shadow: 0px 4px 6px rgba(5, 234, 255, 0.847) !important; /* Añade sombra a las tarjetas */
+  margin-bottom: 20px; /* Espaciado entre tarjetas */
+}
+
+.card-header {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-footer {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #555555 ;
+}

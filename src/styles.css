@@ -1,6 +1,6 @@
 body{
-  background-size: 100vw 100vh;
-  background-repeat: repeat;
-  background-image: url(./assets/verde.jpg);
+
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(1,81,119,1) 60%, rgba(0,212,255,1) 100%);
   color: white;
 }

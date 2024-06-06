@@ -25,24 +25,44 @@ p{
   font-size: 1.5rem;
 }
 
-.btn{
-  background-color: #744ec0;
-  color: rgb(231, 207, 255);
+
+.btn2, .btn{
   margin-top: 20px;
   border-radius: 2rem;
   font-family: sans-serif;
   font-weight: bolder;
   margin-left: 0%;
+  color: white;
 }
-.btn:hover{
-  background-color: #5d21d4;
-  color: rgb(231, 207, 246);
-  border: #5d21d4;
+.btn3.button {
+  background-color: transparent !important;
+  display: flex;            /* Para centrar la imagen */
+  align-items: center;      /* Para centrar la imagen verticalmente */
+  justify-content: center;  /* Para centrar la imagen horizontalmente */
+  width: 35px;             /* Ancho del botón */
+  height: 35px;            /* Alto del botón */
+  padding: 0;               /* Eliminar padding del botón */
+  border: none;             /* Eliminar borde del botón */
+  background-color: #fff;   /* Fondo del botón */
 }
-.btn2{
-  margin-top: 20px;
-  border-radius: 2rem;
-  font-family: sans-serif;
-  font-weight: bolder;
-  margin-left: 0%;
+
+/* Estilo para la imagen */
+.btn3.button img {
+  width: 100%;              /* Abarcar el ancho completo del botón */
+  height: 100%;             /* Abarcar el alto completo del botón */
+  object-fit: contain;      /* Ajustar la imagen sin distorsionarla */
+}
+
+.col-6 {
+  width: 50%;
+  margin: 0 auto; /* Centra el contenido */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.6;
+}
+.font-bold {
+  font-weight: bold;
 }

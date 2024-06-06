@@ -1,0 +1,46 @@
+{
+  "usuario":[
+    {
+    "id": 1,
+    "usuario":"Manuel Aude",
+    "email": "zaude@gmail.com"
+},
+    {
+    "id": 2,
+    "usuario":"Rogelio Chavez",
+    "email": "ingrch@gmail.com"
+},
+    {
+    "id": 3,
+    "usuario":"Jesus Molinar",
+    "email": "jesusmolinar@gmail.com"
+}
+],
+"posts":[
+  {
+    "usuarioid":1,
+    "fecha":"01/06/2024",
+    "post":"Excelente tu pagina se ve muy bien creo que ese color se ve genial que padre esta"
+  },
+  {
+    "usuarioid":1,
+    "fecha":"02/06/2024",
+    "post":"Excelente tu pagina se ve muy bien creo que ese color se ve genial que padre esta"
+  },
+  {
+    "usuarioid":1,
+    "fecha":"03/06/2024",
+    "post":"Excelente tu pagina se ve muy bien creo que ese color se ve genial que padre esta"
+  },
+  {
+    "usuarioid":2,
+    "fecha":"01/06/2024",
+    "post":"Excelente tu pagina se ve muy bien creo que ese color se ve genial que padre esta"
+  },
+  {
+    "usuarioid":3,
+    "fecha":"01/06/2024",
+    "post":"Excelente persona muy trabajadora con muchos conocimientos siempre le pido ayuda cuando tengo cualquier poroblema de informatica ya sea de office o problema tecnico"
+  }
+]
+}

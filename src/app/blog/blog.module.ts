@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { ListPostsComponent } from './pages/list-Posts/list-Posts.component';
+import { CardPostComponent } from './pages/card-Post/card-Post.component';
 
 @NgModule({
   imports: [
@@ -11,7 +13,9 @@ import { BlogPostComponent } from './components/blog-post/blog-post.component';
   ],
   declarations: [
     BlogComponent,
-    BlogPostComponent
+    BlogPostComponent,
+    ListPostsComponent,
+    CardPostComponent
   ]
 })
 export class BlogModuleModule { }

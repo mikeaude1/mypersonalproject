@@ -1,13 +1,12 @@
+import { BlogRoutingModule } from './../blog/blog-routing.module';
+import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AboutPageComponent } from './pages/aboutPage/aboutPage.component';
 import { HomePageComponent } from './pages/homePage/homePage.component';
 
-import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
-import { DxMenuModule, DxCheckBoxModule, DxDataGridModule } from "devextreme-angular";
 import { NgModule } from '@angular/core';
+import { BlogModuleModule } from '../blog/blog.module';
 import { RouterModule } from '@angular/router';
-
 @NgModule({
   declarations:[
     AboutPageComponent,
@@ -15,19 +14,15 @@ import { RouterModule } from '@angular/router';
     SidebarComponent,
   ],
   imports: [
-    BrowserModule,
-    CommonModule,
-    DxCheckBoxModule,
-    DxMenuModule,
-    RouterModule,
-    DxDataGridModule,
-
+BlogModuleModule,
+RouterModule,
+BlogRoutingModule
   ],
   exports:[
     AboutPageComponent,
     HomePageComponent,
     SidebarComponent,
   ],
-  bootstrap: [SidebarComponent],
+  bootstrap: [],
 })
 export class SharedModule { }
