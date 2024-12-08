@@ -1,6 +1,8 @@
-body{
-
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(1,81,119,1) 60%, rgba(0,212,255,1) 100%);
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(1, 81, 119, 1) 60%, rgba(0, 212, 255, 1) 100%);
   color: white;
+  height: 100%; /* Asegura que el body tenga al menos el 100% de la altura de la pantalla */
+  min-height: 100%; /* Para asegurarte de que cubra toda la altura */
+  margin: 0; /* Elimina cualquier margen por defecto del body */
 }

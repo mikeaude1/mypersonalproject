@@ -1,8 +1,11 @@
 .card {
   border-radius: 10px;
-  background-color: hsla(196, 74%, 74%, 0.722);
+  color: white;
+  background: rgb(15, 3, 255);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(1,81,119,1) 60%, rgb(3, 171, 189) 100%);
   box-shadow: 0px 4px 6px rgba(5, 234, 255, 0.847) !important; /* Añade sombra a las tarjetas */
   margin-bottom: 20px; /* Espaciado entre tarjetas */
+  margin-left: auto;
 }
 
 .card-header {
@@ -12,11 +15,12 @@
 }
 
 .card-content {
+ font-synthesis-style: auto;
   padding: 10px;
 }
 
 .card-footer {
   padding: 10px;
   font-size: 0.9rem;
-  color: #555555 ;
+  color: #ffffff ;
 }

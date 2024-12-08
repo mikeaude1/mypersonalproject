@@ -5,8 +5,51 @@
 .men{
   background-color: rgb(0, 4, 52);
 }
-button{
-  margin-left: 30px;
+.button1{
+  --glow-color: rgb(8, 64, 234); /* Azul rey */
+  --glow-spread-color: rgba(0, 61, 244, 0.781); /* Azul rey con opacidad */
+  --enhanced-glow-color: rgb(6, 63, 234); /* Azul rey */
+  --btn-color: rgb(8, 14, 39); /* Un tono más oscuro de azul */
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+              0 0 4em 1em var(--glow-spread-color),
+              inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.35s;
+  animation: glow-animation 3s infinite linear; /* Añadir la animación */
+}
+.button1::after{
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotate(35deg) scale(1, .6);
+}
+.button1:hover{
+  color: var(--btn-color); /* Cambié esto */
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-spread-color),
+              0 0 4em 2em var(--glow-color),
+              inset 0 0 .75em .25em var(--glow-color);
+}
+.button:active{
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+              0 0 2.5em 2em var(--glow-spread-color),
+              inset 0 0 .5em .25em var(--glow-color);
+
 }
 .side{
   background-image: url('../../../../assets/vecteezy_blue-technology-future-big-data-server-glow-triangular_7064600.jpg');

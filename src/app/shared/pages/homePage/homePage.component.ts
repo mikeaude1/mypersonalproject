@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homePage',
@@ -12,7 +13,7 @@ export class HomePageComponent implements OnInit {
   myEmail: string = 'miguelaude@ymail.com';
   subject: string = 'Contacto desde mi portafolio';
   body: string = 'Hola, me gustaría ponerme en contacto contigo.';
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
