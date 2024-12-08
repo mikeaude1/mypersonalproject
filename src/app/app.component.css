@@ -60,4 +60,16 @@ html, body {
 
 
 
+@media (max-width: 768px) {
+  .put-left {
+    display: none; /* Oculta el sidebar en pantallas pequeñas */
+  }
 
+  .col-8 {
+    flex: 1 1 100%;
+  }
+
+  .footer {
+    flex-direction: column; /* Cambia el footer a una disposición en columna */
+  }
+}

@@ -14,5 +14,9 @@ body {
 
   .contenedor {
     flex-direction: column; /* Cambiar diseño a una columna */
+    align-items: stretch;   /* Asegúrate de que los elementos ocupen todo el ancho */
+    gap: 10px;
+    margin: 0;
   }
 }
+
