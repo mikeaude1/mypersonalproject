@@ -1,55 +1,82 @@
-div{ color: rgb(250, 250, 250);
-font-size: 20px;
-font-family: sans-serif;
+/* Estilos generales */
+div {
+  color: rgb(250, 250, 250);
+  font-size: 20px;
+  font-family: sans-serif;
 }
 
+/* Estilo para los botones con imágenes */
 .btn3.button {
   background-color: transparent !important;
-  display: flex;            /* Para centrar la imagen */
-  align-items: center;      /* Para centrar la imagen verticalmente */
-  justify-content: center;  /* Para centrar la imagen horizontalmente */
+  display: flex;            /* Centrar la imagen */
+  align-items: center;      /* Centrar verticalmente */
+  justify-content: center;  /* Centrar horizontalmente */
   width: 35px;             /* Ancho del botón */
   height: 35px;            /* Alto del botón */
-  padding: 0;               /* Eliminar padding del botón */
-  border: none;             /* Eliminar borde del botón */
-  background-color: #fff;   /* Fondo del botón */
+  padding: 0;              /* Eliminar padding */
+  border: none;            /* Eliminar borde */
+  background-color: #fff;  /* Fondo blanco */
 }
 
-/* Estilo para la imagen */
+/* Estilo para la imagen dentro del botón */
 .btn3.button img {
   width: 100%;              /* Abarcar el ancho completo del botón */
   height: 100%;             /* Abarcar el alto completo del botón */
-  object-fit: contain;      /* Ajustar la imagen sin distorsionarla */
+  object-fit: contain;      /* Ajustar imagen sin distorsión */
 }
+
+/* Ajuste del html y body */
 html, body {
-  height: 100%;
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;  /* Tamaño base de fuente */
+}
+
+.container {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 .kopo {
   flex: 0 0 auto;
 }
 
+/* Flexbox para la estructura de las filas */
 .row {
   flex: 1;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.col-3 {
-  flex: 0 0 25%;
+.col-3, .col-8 {
+  width: 100%;  /* Hacer que los contenedores sean de 100% de ancho en pantallas pequeñas */
+  padding: 24px;
+  margin-inline: auto;
+  box-sizing: border-box;
 }
 
-.col-8 {
-  flex: 1;
-  margin-top: 0 !important;
+@media (min-width: 768px) {
+  .col-3 {
+    width: 25%;  /* En pantallas medianas y grandes */
+  }
+
+  .col-8 {
+    width: 65%;  /* En pantallas medianas y grandes */
+  }
 }
 
+/* Estilos del pie de página */
 .footer {
   padding: 20px 0;
   margin-top: auto;
@@ -57,19 +84,27 @@ html, body {
   text-align: center;
 }
 
+.footer .row {
+  justify-content: center;
+}
 
+.footer .col {
+  width: auto;
+  padding: 5px;
+}
 
+.footer img {
+  max-width: 40px;  /* Tamaño de imagen adecuado para el pie de página */
+  height: auto;
+}
 
-@media (max-width: 768px) {
-  .put-left {
-    display: none; /* Oculta el sidebar en pantallas pequeñas */
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 600px) {
+  .footer img {
+    max-width: 30px;  /* Reducir tamaño de los íconos en pantallas pequeñas */
   }
 
-  .col-8 {
-    flex: 1 1 100%;
-  }
-
-  .footer {
-    flex-direction: column; /* Cambia el footer a una disposición en columna */
+  div {
+    font-size: 16px;  /* Reducir tamaño de fuente */
   }
 }
