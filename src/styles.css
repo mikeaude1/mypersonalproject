@@ -6,3 +6,13 @@ body {
   min-height: 100%; /* Para asegurarte de que cubra toda la altura */
   margin: 0; /* Elimina cualquier margen por defecto del body */
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contenedor {
+    flex-direction: column; /* Cambiar diseño a una columna */
+  }
+}
