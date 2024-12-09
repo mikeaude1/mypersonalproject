@@ -1,29 +1,26 @@
 <div class="pad">
-<div class="col-3 ml-">
-  <button id="disponible" class="button1 outline pos-left" data-role="hint" data-hint-text="Contactame!"
+  <div class="col-12">
+    <button id="disponible" class="button1 outline pos-left" data-role="hint" data-hint-text="Contactame!"
     (click)="openEmailOptions()">Disponible Para Trabajar</button>
-</div>
-<br>
-<br>
-<br>
-<div class="row">
-  <div class="col-2 avatar">
-    <img data-role="gravatar" data-email="miguelaude@ymail.com" alt="Foto de perfil" class="profile-img">
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-12">
+      <h1 class="font-bold" id="hey"><img data-role="gravatar" data-email="miguelaude@ymail.com" alt="Foto de perfil" class="profile-img">  Ing. Miguel Aude Alcaraz</h1>
+      <p>¡Hola! Soy <strong class="desa">Ingeniero en Sistemas Computacionales</strong> con más de 10 años de experiencia
+        en Tecnologías de la Información.
+        Actualmente me encuentro trabajando en el <strong class="desa">Desarrollo Web (Fullstack).<br></strong><br>
+      Estoy enfocado en ello y en constante aprendizaje y
+        actualización de las nuevas tecnologías, y te digo una cosa, ¡me encanta!.</p>
+    </div>
   </div>
 
-</div>
-<div class="row">
-  <div class="col-8">
-    <h1 class="font-bold" id="hey">Ing. Miguel Aude Alcaraz</h1>
-    <p>¡Hola! Soy <strong class="desa">Ingeniero en Sistemas Computacionales</strong> con más de 10 años de experiencia
-      en Tecnologías de la Información.
-      Actualmente me encuentro trabajando en el <strong class="desa">Desarrollo Web (Fullstack).<br></strong><br>
-    Estoy enfocado en ello y en constante aprendizaje y
-      actualización de las nuevas tecnologías, y te digo una cosa, ¡me encanta!.</p>
+  <div class="row">
+    <div class="col-12">
+      <h1 class="font-bold" id="hey"><a [routerLink]="'/about'"><span class="mif-books icon"></span>Resumen Profesional</a></h1>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-8">
-    <h1 class="font-bold" id="hey"><a [routerLink]="'/about'"><span class="mif-books icon"></span>Resumen Profesional</a></h1>
-</div>
 </div>
