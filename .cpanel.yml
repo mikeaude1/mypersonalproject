@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/audedevc/public_html
+    - /bin/mkdir -p $DEPLOYPATH/
+    - /bin/cp -a . $DEPLOYPATH/
+  branch: main
