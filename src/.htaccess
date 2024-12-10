@@ -1,21 +1,12 @@
 <IfModule mod_rewrite.c>
-<<<<<<< HEAD
     RewriteEngine On
     RewriteBase /
 
-    # Redirige las solicitudes de archivos existentes
+    # Redirige solicitudes que sean archivos o directorios existentes
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
 
     # Redirige todo lo demás al index.html
     RewriteRule ^ index.html [L]
-=======
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
->>>>>>> f9254fdc16426f0591c5056ae4fcad1ed6e3cecd
 </IfModule>

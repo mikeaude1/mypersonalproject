@@ -1,6 +1,24 @@
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home3/audedevc/public_html
-    - /bin/mkdir -p $DEPLOYPATH/
-    - /bin/cp -a . $DEPLOYPATH/
-  branch: main
+environments:
+  production:
+    deployment_path: /home3/audedev/public_html/myPersonalProject
+    pre_deploy:
+      - npm install
+      - ng build --prod
+    post_deploy:
+      - echo "Despliegue completado con éxito!"
+    file_permissions:
+      - path: /home3/audedev/public_html/myPersonalProject  # Actualización aquí
+        permissions: 755
+    maintenance_mode: false
+
+  development:
+    deployment_path: /home/username/public_html/dev-myPersonalProject
+    pre_deploy:
+      - npm install
+      - ng build --configuration development
+    post_deploy:
+      - echo "Despliegue de desarrollo completado!"
+    file_permissions:
+      - path: /home/username/public_html/dev-myPersonalProject
+        permissions: 755
+    maintenance_mode: false
