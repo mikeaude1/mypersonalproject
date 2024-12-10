@@ -1,9 +1,10 @@
-#container {
-  width: 80px;
-  height: 100px;
-}
+
 .men{
   background-color: rgb(0, 4, 52);
+}
+
+.side{
+  background-image: url('../../../../assets/vecteezy_blue-technology-future-big-data-server-glow-triangular_7064600.jpg');
 }
 .button1{
   margin-left: 80px;
@@ -51,7 +52,4 @@
               0 0 2.5em 2em var(--glow-spread-color),
               inset 0 0 .5em .25em var(--glow-color);
 
-}
-.side{
-  background-image: url('../../../../assets/vecteezy_blue-technology-future-big-data-server-glow-triangular_7064600.jpg');
 }

@@ -1,113 +1,10 @@
-/* Meta tag de viewport para hacer la página responsiva */
-@media screen and (max-width: 480px) {
-  /* Ajusta la imagen de perfil */
-  img {
-    width: auto !important; /* Evita que la imagen cambie en pantallas pequeñas */
-    height: auto !important;
-  }
-
-  /* Ajusta el tamaño del encabezado */
-  #hey {
-    font-size: 1.2rem;
-  }
-
-  /* Ajuste en el párrafo */
-  p {
-    font-size: 0.9rem;
-  }
-
-  /* Botón más pequeño en pantallas pequeñas */
-  .button1 {
-    font-size: 0.8rem;
-    padding: 0.5em 1em;
-  }
-
-  /* Ajusta el contenedor de la imagen y el texto */
-  .pad {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-/* Ajuste para pantallas más pequeñas, pero no tan pequeñas como 480px */
-@media screen and (max-width: 768px) {
-  /* Ajusta el tamaño del encabezado */
-  #hey {
-    font-size: 1.5rem;
-  }
-
-  /* Ajusta el tamaño del párrafo */
-  p {
-    font-size: 1rem;
-  }
-
-  /* Ajuste del tamaño del botón */
-  .button1 {
-    font-size: 0.9rem;
-    padding: 0.6em 1.2em;
-  }
-
-  /* Ajuste en el contenedor */
-  .pad {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-/* Ajustes para pantallas de tablets o pantallas más grandes */
-@media screen and (max-width: 992px) {
-  #hey {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  .button1 {
-    font-size: 1rem;
-    padding: 0.7em 1.5em;
-  }
-
-  /* Ajuste en el contenedor */
-  .pad {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-}
-
-/* Ajustes para pantallas grandes */
-@media screen and (max-width: 1200px) {
-  #hey {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }
-
-  .button1 {
-    font-size: 1.2rem;
-    padding: 0.8em 2em;
-  }
-
-  /* Ajuste en el contenedor */
-  .pad {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-
-/* Estilo base de imagen de perfil */
 img {
   border-radius: 100px;
-  width: auto; /* Mantiene la relación de aspecto original */
+  width: auto; /* Esto evita que se cambie el tamaño */
   height: auto; /* Mantiene la relación de aspecto original */
   max-width: 100%; /* Asegura que no exceda el contenedor */
-  margin-left: 10px;
 }
 
-/* Estilo base del encabezado */
 #hey {
   font-size: 3rem;
   font-weight: bolder;
@@ -115,13 +12,13 @@ img {
   font-family: Onest Variable, system-ui, sans-serif;
 }
 
-/* Contenedor de la sección */
-.pad {
-  margin-left: 90px;
-  margin-right: 0%;
+
+#disponible1 {
+  border-radius: 2rem;
+  font-family: sans-serif;
+  font-weight: bolder;
 }
 
-/* Estilo para el botón principal */
 .button1 {
   --glow-color: rgb(8, 64, 234); /* Azul rey */
   --glow-spread-color: rgba(0, 61, 244, 0.781); /* Azul rey con opacidad */
@@ -143,7 +40,6 @@ img {
   animation: glow-animation 3s infinite linear;
 }
 
-/* Efectos del hover y active en el botón */
 .button1::after {
   pointer-events: none;
   content: "";
@@ -172,35 +68,10 @@ img {
               inset 0 0 .5em .25em var(--glow-color);
 }
 
-/* Ajuste para la clase "desa" */
-.desa {
-  color: rgb(235, 235, 81);
+.side {
+  background-image: url('../../../../assets/vecteezy_blue-technology-future-big-data-server-glow-triangular_7064600.jpg');
 }
 
-/* Estilo del párrafo */
-p {
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.6;
-}
-
-/* Estilo de las columnas */
-.col-6 {
-  max-width: 1000px;
-  margin-inline: auto;
-  padding: 24px;
-}
-
-/* Estilos para el resumen profesional */
-#disponible1 {
-  margin-top: 20px;
-  border-radius: 2rem;
-  font-family: sans-serif;
-  font-weight: bolder;
-  margin-left: 0%;
-}
-
-/* Animación de resplandor */
 @keyframes glow-animation {
   0% {
     box-shadow: 0 0 1em .25em var(--glow-color),
@@ -229,7 +100,117 @@ p {
   100% {
     box-shadow: 0 0 1em .25em var(--enhanced-glow-color),
                 0 0 4em 1em var(--glow-color),
-                inset 0 0 .75em .25em var(--enhanced-glow-color);
+                inset 0 0 .75em .25em var(--enhanced-gllow-color);
     border-color: var(--enhanced-glow-color);
   }
+}
+
+.desa {
+  color: rgb(235, 235, 81);
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn2, .btn {
+  border-radius: 2rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+.btn3.button {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Cambié esto para que el botón sea de ancho completo */
+  height: 35px;
+  padding: 0;
+  border: none;
+  background-color: #fff;
+}
+
+.btn3.button img {
+  width: 100%;              /* Asegura que la imagen ocupe todo el ancho disponible */
+  height: auto;             /* Mantiene la relación de aspecto */
+  object-fit: contain;      /* Ajusta la imagen sin distorsionarla */
+}
+
+
+p {
+  line-height: 1.6;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Consultas de medios para responsividad */
+@media screen and (max-width: 1200px) {
+  #hey {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .button1 {
+    font-size: 1.2rem;
+    padding: 0.8em 2em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #hey {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .button1 {
+    font-size: 1rem;
+    padding: 0.7em 1.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hey {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .button1 {
+    font-size: 0.9rem;
+    padding: 0.6em 1.2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #hey {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .button1 {
+    font-size: 0.8rem;
+    padding: 0.5em 1em;
+  }
+
+  img {
+    width: auto !important; /* Evita que la imagen cambie en pantallas pequeñas */
+    height: auto !important;
+  }
+
 }

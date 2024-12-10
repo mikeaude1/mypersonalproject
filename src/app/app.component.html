@@ -1,32 +1,68 @@
-<div class="main-container">
-  <div class="kopo">
-    <app-sidebar class="put-left"></app-sidebar>
+<aside class="sidebar pos-absolute z-2"
+       id="sb3"
+       data-role="sidebar"
+       data-toggle="#sidebar-toggle-3"
+       data-shift=".shifted-content">
+  <div class="sidebar-header side" data-image="assets/foto cv.jpg">
+    <a href="#" class="fg-white sub-action" onclick="Metro.sidebar.close('#sb3'); return false;">
+      <span class="mif-arrow-left mif-2x"></span>
+    </a>
+    <div class="avatar">
+      <img data-role="gravatar" data-email="miguelaude@ymail.com" alt="Foto de perfil" class="profile-img">
+    </div>
+    <span class="title fg-white">Miguel Aude Alcaraz</span>
+    <span class="subtitle fg-white">Computational System Engineer</span>
   </div>
-  <div class="row container">
-    <div class="col">
-    </div>
-    <div class="col">
-      <router-outlet style="margin-top: 0% !important;"></router-outlet>
-    </div>
+  <ul class="sidebar-menu fg-white men">
+    <li><a [routerLink]="'home'" routerLinkActive="active"><span class="mif-home icon"></span>Home</a></li>
+    <li><a routerLink="about"><span class="mif-books icon"></span>Resumen</a></li>
+    <li><a routerLink="proyectos"><span class="mif-suitcase icon"></span>Proyectos</a></li>
+    <li><a routerLink="blog/blog"><span class="mif-news icon"></span>Blog</a></li>
+    <li class="divider"></li>
+  </ul>
+</aside>
+
+<div class="shifted-content h-100 p-ab">
+  <div class="app-bar pos-absolute men z-1" data-role="appbar">
+    <button class="app-bar-item c-pointer button1" id="sidebar-toggle-3">
+      <span class="mif-menu fg-white"></span>
+    </button>
   </div>
-  <div class="footer">
-    <div class="row justify-content-md-center">
-      <div class="col-4"></div>
-      <div class="col-2">
-        <a class="btn3 button" href="https://github.com/mikeaude1/" target="_blank">
-          <img src="../../../../assets/github.png" alt="">
-        </a>
+
+  <div class="h-100 p-4">
+    <div class="main-container">
+      <div class="kopo">
+        <app-sidebar class="put-left"></app-sidebar>
       </div>
-      <div class="col-2">
-        <a class="btn3 button" href="https://www.linkedin.com/in/miguel-aude-alcaraz-845aa4205/" target="_blank">
-          <img src="../../../../assets/logotipo-de-linkedin.png" alt="">
-        </a>
+      <div class="row container">
+        <div class="col">
+        </div>
+        <div class="col">
+          <router-outlet style="margin-top: 0% !important;"></router-outlet>
+        </div>
       </div>
-      <div class="col-2">
-        <a class="btn3 button" href="{{ whatsappLink }}" target="_blank">
-          <img src="../../../../assets/whatsapp.png" alt="">
-        </a>
+      <div class="footer">
+        <div class="row justify-content-md-center">
+          <div class="col-4"></div>
+          <div class="col-2">
+            <a class="btn3 button" href="https://github.com/mikeaude1/" target="_blank">
+              <img src="../../../../assets/github.png" alt="">
+            </a>
+          </div>
+          <div class="col-2">
+            <a class="btn3 button" href="https://www.linkedin.com/in/miguel-aude-alcaraz-845aa4205/" target="_blank">
+              <img src="../../../../assets/logotipo-de-linkedin.png" alt="">
+            </a>
+          </div>
+          <div class="col-2">
+            <a class="btn3 button" href="{{ whatsappLink }}" target="_blank">
+              <img src="../../../../assets/whatsapp.png" alt="">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 </div>
+
