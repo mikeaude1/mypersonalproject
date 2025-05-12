@@ -1,0 +1,48 @@
+
+
+        .carousel {
+            height: 600px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: white;
+
+        }
+        .contened{
+          padding-left: 20%;
+          padding-right: 20%;
+        }
+        .slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .slide img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide p {
+            margin: 20px;
+        }
+
+        .button {
+            margin-top: 15px;
+        }
+
+        /* Personalización de controles */
+        .mif-chevron-right, .mif-chevron-left {
+            font-size: 30px;
+        }
+
+        .bullet-big {
+            width: 20px;
+            height: 20px;
+        }
+
+        .fg-cyan {
+            color: #00BCD4;
+        }

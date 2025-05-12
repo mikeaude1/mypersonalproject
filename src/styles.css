@@ -1,57 +1,62 @@
 /* Estilos globales para el body */
-body {
+body,
+html {
   background: rgb(2, 0, 36);
   background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(1, 81, 119, 1) 60%, rgba(0, 212, 255, 1) 100%);
   color: white;
-  height: 100%; /* Asegura que el body tenga al menos el 100% de la altura de la pantalla */
-  min-height: 100%; /* Asegura que el body cubra toda la altura */
-  margin: 0; /* Elimina cualquier margen por defecto del body */
-  font-family: sans-serif; /* Asegura una fuente más legible */
+  height: 100%;
+  /* Asegura que el body tenga al menos el 100% de la altura de la pantalla */
+  min-height: 100%;
+  /* Asegura que el body cubra toda la altura */
+  margin: 0;
+  /* Elimina cualquier margen por defecto del body */
+  font-family: sans-serif;
+  /* Asegura una fuente más legible */
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
   body {
-    font-size: 14px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
-    padding: 10px;   /* Añade algo de espaciado en los bordes */
+    font-size: 14px;
+    /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    padding: 10px;
+    /* Añade algo de espaciado en los bordes */
+    display: flex;
   }
 
   .contenedor {
-    flex-direction: column; /* Cambia el diseño a columna */
-    align-items: stretch;   /* Asegura que los elementos ocupen todo el ancho */
-    gap: 10px;              /* Añade un espacio entre los elementos */
-    margin: 0;              /* Elimina márgenes adicionales */
-  }
-
-  .main-container {
-    padding: 15px; /* Añadir algo de espaciado interno en la página principal */
-  }
-
-  .footer {
-    padding: 15px 0; /* Espaciado vertical adecuado en el pie de página */
-  }
-
-  .footer .row {
-    flex-direction: column; /* Organiza los íconos de manera vertical en pantallas pequeñas */
-  }
-
-  .footer .col {
-    margin-bottom: 10px; /* Espacio entre los íconos del pie de página */
+    flex-direction: column;
+    /* Cambia el diseño a columna */
+    align-items: stretch;
+    /* Asegura que los elementos ocupen todo el ancho */
+    gap: 10px;
+    /* Añade un espacio entre los elementos */
+    margin: 0;
+    /* Elimina márgenes adicionales */
   }
 }
 
 /* Mejorar la accesibilidad y el diseño general */
 html {
-  font-size: 16px;  /* Base font-size para asegurar consistencia */
+  font-size: 16px;
+  /* Base font-size para asegurar consistencia */
 }
 
 a {
-  text-decoration: none; /* Elimina subrayados en los enlaces */
+  text-decoration: none;
+  /* Elimina subrayados en los enlaces */
 }
 
 /* Asegurar que las imágenes dentro de los botones se ajusten bien */
 .btn3.button img {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del botón */
-  height: 100%; /* Asegura que la imagen ocupe todo el alto del botón */
-  object-fit: contain; /* Asegura que la imagen no se distorsione */
+  width: 100%;
+  /* Asegura que la imagen ocupe todo el ancho del botón */
+  height: 100%;
+  /* Asegura que la imagen ocupe todo el alto del botón */
+  object-fit: contain;
+  /* Asegura que la imagen no se distorsione */
 }

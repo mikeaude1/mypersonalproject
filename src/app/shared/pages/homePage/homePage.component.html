@@ -1,27 +1,26 @@
-<div class="pad">
-  <div class="col-12">
-    <button id="disponible" class="button1 outline pos-left" data-role="hint" data-hint-text="Contactame!"
-    (click)="openEmailOptions()">Disponible Para Trabajar</button>
-  </div>
-  <br>
-  <br>
-  <br>
+<div class="welcome-section pad">
+    <h1>¡Bienvenidos!</h1>
+    <p>Gracias por visitar mi perfil profesional</p>
 
-  <div class="row">
-    <div class="col-12">
-      <h1 class="font-bold" id="hey"><img data-role="gravatar" data-email="miguelaude@ymail.com" alt="Foto de perfil" class="profile-img">  Ing. Miguel Aude Alcaraz</h1>
-      <p>¡Hola! Soy <strong class="desa">Ingeniero en Sistemas Computacionales</strong> con más de 10 años de experiencia
-        en Tecnologías de la Información.
-        Actualmente me encuentro trabajando en el <strong class="desa">Desarrollo Web (Fullstack).<br></strong><br>
-      Estoy enfocado en ello y en constante aprendizaje y
-        actualización de las nuevas tecnologías, y te digo una cosa, ¡me encanta!.</p>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-12">
-      <h1 class="font-bold" id="hey"><a [routerLink]="'/about'"><span class="mif-books icon"></span>Resumen Profesional</a></h1>
+        <p>¡Hola! Soy <strong class="desa">Miguel Aude Alcaraz</strong>, un apasionado <strong class="desa">Ingeniero en Sistemas Computacionales</strong>
+        con más de 10 años de experiencia en Tecnologías de la Información. Mi especialidad es el
+        <strong class="desa">Desarrollo Web Fullstack</strong>, y actualmente me encuentro enfocado en crear aplicaciones eficientes y escalables.</p>
+
+        <p>Me encanta aprender constantemente y aplicar metodologías ágiles junto con las mejores prácticas de programación. ¡Desarrollar software no solo es mi trabajo, es mi pasión!</p>
+       <div class="centrado">
+         <button id="disponible" class="button1 outline pos-left" data-role="hint" data-hint-text="Contactame!"
+    (click)="openEmailOptions()"> 💼 Disponible Para Trabajar</button>
     </div>
-  </div>
+
+    <!-- Resumen Profesional -->
+    <div class="row">
+        <div class="col-12">
+            <h1 class="font-bold" id="hey" style="padding-left: 5% !important;">
+                <a [routerLink]="'/about'" class="ul">
+                    <span class="mif-books icon"></span> Ver Mi Resumen Profesional ahora!!!!
+                </a>
+            </h1>
+        </div>
+    </div>
 </div>
-<div><h1>Bienvenidos...</h1></div>

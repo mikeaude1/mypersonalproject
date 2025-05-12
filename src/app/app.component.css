@@ -1,6 +1,6 @@
 /* Estilos generales */
-div {
-  color: rgb(250, 250, 250);
+.enlacemenu {
+  color: rgb(250, 250, 250) !important;
   font-size: 20px;
   font-family: sans-serif;
 }
@@ -8,28 +8,41 @@ div {
 /* Estilo para los botones con imágenes */
 .btn3.button {
   background-color: transparent !important;
-  display: flex;            /* Centrar la imagen */
-  align-items: center;      /* Centrar verticalmente */
-  justify-content: center;  /* Centrar horizontalmente */
-  width: 35px;             /* Ancho del botón */
-  height: 35px;            /* Alto del botón */
-  padding: 0;              /* Eliminar padding */
-  border: none;            /* Eliminar borde */
-  background-color: #fff;  /* Fondo blanco */
+  display: flex;
+  /* Centrar la imagen */
+  align-items: center;
+  /* Centrar verticalmente */
+  justify-content: center;
+  /* Centrar horizontalmente */
+  width: 35px;
+  /* Ancho del botón */
+  height: 35px;
+  /* Alto del botón */
+  padding: 0;
+  /* Eliminar padding */
+  border: none;
+  /* Eliminar borde */
+  background-color: #fff;
+  /* Fondo blanco */
 }
 
 /* Estilo para la imagen dentro del botón */
 .btn3.button img {
-  width: 100%;              /* Abarcar el ancho completo del botón */
-  height: 100%;             /* Abarcar el alto completo del botón */
-  object-fit: contain;      /* Ajustar imagen sin distorsión */
+  width: 100%;
+  /* Abarcar el ancho completo del botón */
+  height: 100%;
+  /* Abarcar el alto completo del botón */
+  object-fit: contain;
+  /* Ajustar imagen sin distorsión */
 }
 
 /* Ajuste del html y body */
-html, body {
+html,
+body {
   width: 100%;
   margin: 0 auto;
-  font-size: 16px;  /* Tamaño base de fuente */
+  font-size: 16px;
+  /* Tamaño base de fuente */
 }
 
 .container {
@@ -41,10 +54,55 @@ html, body {
 }
 
 .main-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
+  margin-top: 8%;
+}
+
+/* Ajuste para pantallas medianas */
+@media (max-width: 1200px) {
+  .main-container {
+    margin-top: 80px;
+  }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .main-container {
+    margin-top: 70px;
+  }
+}
+
+/* Ajuste para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .main-container {
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-container {
+    margin-top: 180px !important;
+  }
+}
+
+/* Ajuste específico para pantallas de 412px de ancho */
+@media (max-width: 412px) {
+  .main-container {
+    margin-top: 200px !important;
+
+  }
+
+  @media (max-width: 414px) {
+    .main-container {
+      margin-top: 200px !important;
+    }
+  }
+}
+
+@media (max-width: 412px) {
+  .main-container {
+    margin-top: 1000px;
+    /* Ajusta según la altura real de tu barra en móvil pequeño */
+  }
 }
 
 .kopo {
@@ -59,8 +117,10 @@ html, body {
   justify-content: center;
 }
 
-.col-3, .col-8 {
-  width: 100%;  /* Hacer que los contenedores sean de 100% de ancho en pantallas pequeñas */
+.col-3,
+.col-8 {
+  width: 100%;
+  /* Hacer que los contenedores sean de 100% de ancho en pantallas pequeñas */
   padding: 24px;
   margin-inline: auto;
   box-sizing: border-box;
@@ -68,57 +128,41 @@ html, body {
 
 @media (min-width: 768px) {
   .col-3 {
-    width: 25%;  /* En pantallas medianas y grandes */
+    width: 25%;
+    /* En pantallas medianas y grandes */
   }
 
   .col-8 {
-    width: 65%;  /* En pantallas medianas y grandes */
+    width: 65%;
+    /* En pantallas medianas y grandes */
   }
+
 }
 
 /* Estilos del pie de página */
-.footer {
-  padding: 20px 0;
-  margin-top: auto;
-  width: 100%;
-  text-align: center;
-}
 
-.footer .row {
-  justify-content: center;
-}
 
-.footer .col {
-  width: auto;
-  padding: 5px;
-}
-
-.footer img {
-  max-width: 40px;  /* Tamaño de imagen adecuado para el pie de página */
-  height: auto;
-}
 
 /* Media Queries para pantallas pequeñas */
-@media (max-width: 600px) {
-  .footer img {
-    max-width: 30px;  /* Reducir tamaño de los íconos en pantallas pequeñas */
-  }
 
-  div {
-    font-size: 16px;  /* Reducir tamaño de fuente */
-  }
-}
-.men{
+
+.men {
   background-color: rgb(0, 4, 52);
 }
-.side{
+
+.side {
   background-image: url('../assets/vecteezy_blue-technology-future-big-data-server-glow-triangular_7064600.jpg');
 }
-.button1{
-  --glow-color: rgb(8, 64, 234); /* Azul rey */
-  --glow-spread-color: rgba(0, 61, 244, 0.781); /* Azul rey con opacidad */
-  --enhanced-glow-color: rgb(6, 63, 234); /* Azul rey */
-  --btn-color: rgb(8, 14, 39); /* Un tono más oscuro de azul */
+
+.button1 {
+  --glow-color: rgb(64, 242, 255);
+  /* Azul rey */
+  --glow-spread-color: rgba(0, 61, 244, 0.781);
+  /* Azul rey con opacidad */
+  --enhanced-glow-color: rgb(6, 63, 234);
+  /* Azul rey */
+  --btn-color: rgb(8, 14, 39);
+  /* Un tono más oscuro de azul */
   border: 0.25em solid var(--glow-color);
   padding: 1em 3em;
   color: var(--glow-color);
@@ -127,14 +171,15 @@ html, body {
   border-radius: 1em;
   outline: none;
   box-shadow: 0 0 1em .25em var(--glow-color),
-              0 0 4em 1em var(--glow-spread-color),
-              inset 0 0 .75em .25em var(--glow-color);
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.35s;
   animation: glow-animation 3s infinite linear;
 }
-.button1::after{
+
+.button1::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -147,16 +192,46 @@ html, body {
   opacity: .7;
   transform: perspective(1.5em) rotate(35deg) scale(1, .6);
 }
-.button1:hover{
-  color: var(--btn-color);
-  background-color: var(--glow-color);
-  box-shadow: 0 0 1em .25em var(--glow-spread-color),
-              0 0 4em 2em var(--glow-color),
-              inset 0 0 .75em .25em var(--glow-color);
-}
-.button:active{
-  box-shadow: 0 0 0.6em .25em var(--glow-color),
-              0 0 2.5em 2em var(--glow-spread-color),
-              inset 0 0 .5em .25em var(--glow-color);
 
+.button1:hover {
+  color: var(--btn-color) !important;
+  background-color: var(--glow-color);
+
+  box-shadow: 0 0 1em .25em var(--glow-spread-color),
+    0 0 4em 2em var(--glow-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+
+.button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+
+}
+
+#hey img {
+  border-radius: 100px;
+  margin-left: 30rem;
+  width: auto;
+  /* Esto evita que se cambie el tamaño */
+  height: auto;
+  /* Mantiene la relación de aspecto original */
+  max-width: 100%;
+  /* Asegura que no exceda el contenedor */
+}
+
+/*aqui*/
+
+@media (max-width: 768px) {
+  .main-container {
+    margin-top: 50%;
+    /* Ajusta este valor según la altura real de tu barra */
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    margin-top: 20%;
+    /* Ajusta según la altura real de tu barra */
+  }
 }

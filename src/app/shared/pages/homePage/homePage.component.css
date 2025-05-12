@@ -4,7 +4,10 @@ img {
   height: auto; /* Mantiene la relación de aspecto original */
   max-width: 100%; /* Asegura que no exceda el contenedor */
 }
+.ul{
+  color: #93ac07;
 
+}
 #hey {
   font-size: 3rem;
   font-weight: bolder;
@@ -20,7 +23,7 @@ img {
 }
 
 .button1 {
-  --glow-color: rgb(8, 64, 234); /* Azul rey */
+  --glow-color: rgb(60, 240, 247); /* Azul rey */
   --glow-spread-color: rgba(0, 61, 244, 0.781); /* Azul rey con opacidad */
   --enhanced-glow-color: rgb(6, 63, 234); /* Azul rey */
   --btn-color: rgb(8, 14, 39); /* Un tono más oscuro de azul */
@@ -213,4 +216,15 @@ p {
     height: auto !important;
   }
 
+}
+
+.pad{
+  padding-left: 20% !important;
+  padding-right: 20% !important;
+}
+.centrado{
+  padding-left: 40% !important;
+  padding-right: 40% !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
 }
